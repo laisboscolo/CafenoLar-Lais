@@ -187,5 +187,12 @@ main{
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font
+    font-size: 56px;
+    font-weight: 800;
+    color: #FFF;
+}
+
+/* linha marrom abaixo do titulo principal */
+hr {
+    border-color: #a45a49;
 }
