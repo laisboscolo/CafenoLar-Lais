@@ -196,3 +196,11 @@ h1 {
 hr {
     border-color: #a45a49;
 }
+
+/* Texto abaixo do titulo principal */
+.subtitle {
+    color: #c7bab3;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: ;
+}
