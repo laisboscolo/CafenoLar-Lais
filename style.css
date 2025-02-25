@@ -1,0 +1,191 @@
+@import url('hhtps://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@600&family=Montserrat:wght@800&family=Teko:wght@600&display=swap');
+ 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1F1517;
+    color: #FFFF;
+}
+
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* header */
+
+nav {
+    max-width: 1120px;
+    margin: auto;
+
+    padding: 1.5rem 10rem;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: 'Teko', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase; /*transforma o texto em letras maiusculas */
+}
+
+/* menu hamburguer */
+.menu-toggle {
+    display: none; /*nao exibe entrelas grandes */
+    cursor: pointer;
+}
+
+/* imagem hamburguer rensposividade */
+
+.menu-icon{
+    width:28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.menu {
+    display: flex; /* deixa flexivel */
+    flex-direction: row;
+    gap: 24px; /* espaçamento entre os elementos filhos como 24 pixels */
+    color: #FFF2E780;
+    margin-top: 9px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.menu a:hover{
+    color: #fff; 
+    /* nova cor do texto quando passa por cima */
+}
+
+.menu a:visited {
+    color: #FFF2E780;
+    /* define a cor dos links visitados */
+}
+
+/* responsividade para telas menores que 768px */
+
+@media screen and (max-width: 768px) {
+
+    /* header */
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 9;
+    }
+    nav ul li {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu {
+        margin-left: 0px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-right: -70px;
+    }
+
+    .title {
+        margin-left: -100px;
+    }
+}
+
+/* sessao principal main */
+main{
+    display: flex;
+    /* define flexivel */
+    flex-direction: column;
+    /* estabelece a direçao dos elementos filhos para uma disposiçao em coluna */
+
+}
+
+.container {
+    background: #181012;
+    transform: translateX(100%);
+    opacity: 0;
+
+    /* adiciona transiçao para suavizar a animaçao*/
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* animaçao para entrada da direita para a esquerda */
+.container.slide-from-right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.info {
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    align-items: center;
+    padding: 0rem 2rem;
+    margin: auto;
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    align-items: center;
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: clip;
+}
+
+/* destaque */
+
+.content {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.news{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* usado na palavra (novidades) no main */
+
+.marrom {
+    color: #a45a49;
+}
+
+/* usado na palavra (em alta) em receitas */
+.amarelo {
+    color: #e7a80e;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font
+}
